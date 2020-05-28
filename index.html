@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>vue_test</title>
-  </head>
-  <body>
-    <div id="app" style="color: #FF0000;">
-		多年以后你会不会记得我</div>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>我的简历</title>
+		<link rel="stylesheet" type="text/css" href="src/assets/home.css" />
+	</head>
+	<body>
+		<div id="app" style="color: #F0F0F0;">
+			<div class="article-heading js-article-heading js-geopattern" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NDAiIGhlaWdodD0iNDQwIj48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJyZ2IoMTI3LCA1NCwgNjApIiAgLz48cmVjdCB4PSIwIiB5PSI1IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxNSIgb3BhY2l0eT0iMC4xMDY2NjY2NjY2NjY2NjY2NyIgZmlsbD0iI2RkZCIgIC8+PHJlY3QgeD0iMCIgeT0iMjkiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjE4IiBvcGFjaXR5PSIwLjEzMjY2NjY2NjY2NjY2NjY1IiBmaWxsPSIjMjIyIiAgLz48cmVjdCB4PSIwIiB5PSI1NyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAiIG9wYWNpdHk9IjAuMDYzMzMzMzMzMzMzMzMzMzQiIGZpbGw9IiMyMjIiICAvPjxyZWN0IHg9IjAiIHk9IjgyIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMyIgb3BhY2l0eT0iMC4wODkzMzMzMzMzMzMzMzMzMyIgZmlsbD0iI2RkZCIgIC8+PHJlY3QgeD0iMCIgeT0iMTEzIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMiIgb3BhY2l0eT0iMC4wODA2NjY2NjY2NjY2NjY2NiIgZmlsbD0iIzIyMiIgIC8+PHJlY3QgeD0iMCIgeT0iMTM3IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMyIgb3BhY2l0eT0iMC4wODkzMzMzMzMzMzMzMzMzMyIgZmlsbD0iI2RkZCIgIC8+PHJlY3QgeD0iMCIgeT0iMTY5IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMCIgb3BhY2l0eT0iMC4wNjMzMzMzMzMzMzMzMzMzNCIgZmlsbD0iIzIyMiIgIC8+PHJlY3QgeD0iMCIgeT0iMTg0IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI3IiBvcGFjaXR5PSIwLjAzNzMzMzMzMzMzMzMzMzMzIiBmaWxsPSIjZGRkIiAgLz48cmVjdCB4PSIwIiB5PSIxOTgiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjIwIiBvcGFjaXR5PSIwLjE1IiBmaWxsPSIjMjIyIiAgLz48cmVjdCB4PSIwIiB5PSIyMzMiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjE2IiBvcGFjaXR5PSIwLjExNTMzMzMzMzMzMzMzMzM0IiBmaWxsPSIjMjIyIiAgLz48cmVjdCB4PSIwIiB5PSIyNjEiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjUiIG9wYWNpdHk9IjAuMDIiIGZpbGw9IiNkZGQiICAvPjxyZWN0IHg9IjAiIHk9IjI3MiIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTQiIG9wYWNpdHk9IjAuMDk4IiBmaWxsPSIjMjIyIiAgLz48cmVjdCB4PSIwIiB5PSIyOTgiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyIiBvcGFjaXR5PSIwLjA4MDY2NjY2NjY2NjY2NjY2IiBmaWxsPSIjMjIyIiAgLz48cmVjdCB4PSIwIiB5PSIzMjciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwIiBvcGFjaXR5PSIwLjA2MzMzMzMzMzMzMzMzMzM0IiBmaWxsPSIjMjIyIiAgLz48cmVjdCB4PSIwIiB5PSIzNTUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEzIiBvcGFjaXR5PSIwLjA4OTMzMzMzMzMzMzMzMzMzIiBmaWxsPSIjZGRkIiAgLz48cmVjdCB4PSIwIiB5PSIzNzciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjUiIG9wYWNpdHk9IjAuMDIiIGZpbGw9IiNkZGQiICAvPjxyZWN0IHg9IjAiIHk9IjM5OCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTYiIG9wYWNpdHk9IjAuMTE1MzMzMzMzMzMzMzMzMzQiIGZpbGw9IiMyMjIiICAvPjxyZWN0IHg9IjAiIHk9IjQzMSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iOSIgb3BhY2l0eT0iMC4wNTQ2NjY2NjY2NjY2NjY2NyIgZmlsbD0iI2RkZCIgIC8+PHJlY3QgeD0iNSIgeT0iMCIgd2lkdGg9IjE1IiBoZWlnaHQ9IjEwMCUiIG9wYWNpdHk9IjAuMTA2NjY2NjY2NjY2NjY2NjciIGZpbGw9IiNkZGQiICAvPjxyZWN0IHg9IjI5IiB5PSIwIiB3aWR0aD0iMTgiIGhlaWdodD0iMTAwJSIgb3BhY2l0eT0iMC4xMzI2NjY2NjY2NjY2NjY2NSIgZmlsbD0iIzIyMiIgIC8+PHJlY3QgeD0iNTciIHk9IjAiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMDAlIiBvcGFjaXR5PSIwLjA2MzMzMzMzMzMzMzMzMzM0IiBmaWxsPSIjMjIyIiAgLz48cmVjdCB4PSI4MiIgeT0iMCIgd2lkdGg9IjEzIiBoZWlnaHQ9IjEwMCUiIG9wYWNpdHk9IjAuMDg5MzMzMzMzMzMzMzMzMzMiIGZpbGw9IiNkZGQiICAvPjxyZWN0IHg9IjExMyIgeT0iMCIgd2lkdGg9IjEyIiBoZWlnaHQ9IjEwMCUiIG9wYWNpdHk9IjAuMDgwNjY2NjY2NjY2NjY2NjYiIGZpbGw9IiMyMjIiICAvPjxyZWN0IHg9IjEzNyIgeT0iMCIgd2lkdGg9IjEzIiBoZWlnaHQ9IjEwMCUiIG9wYWNpdHk9IjAuMDg5MzMzMzMzMzMzMzMzMzMiIGZpbGw9IiNkZGQiICAvPjxyZWN0IHg9IjE2OSIgeT0iMCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwMCUiIG9wYWNpdHk9IjAuMDYzMzMzMzMzMzMzMzMzMzQiIGZpbGw9IiMyMjIiICAvPjxyZWN0IHg9IjE4NCIgeT0iMCIgd2lkdGg9IjciIGhlaWdodD0iMTAwJSIgb3BhY2l0eT0iMC4wMzczMzMzMzMzMzMzMzMzMyIgZmlsbD0iI2RkZCIgIC8+PHJlY3QgeD0iMTk4IiB5PSIwIiB3aWR0aD0iMjAiIGhlaWdodD0iMTAwJSIgb3BhY2l0eT0iMC4xNSIgZmlsbD0iIzIyMiIgIC8+PHJlY3QgeD0iMjMzIiB5PSIwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTAwJSIgb3BhY2l0eT0iMC4xMTUzMzMzMzMzMzMzMzMzNCIgZmlsbD0iIzIyMiIgIC8+PHJlY3QgeD0iMjYxIiB5PSIwIiB3aWR0aD0iNSIgaGVpZ2h0PSIxMDAlIiBvcGFjaXR5PSIwLjAyIiBmaWxsPSIjZGRkIiAgLz48cmVjdCB4PSIyNzIiIHk9IjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxMDAlIiBvcGFjaXR5PSIwLjA5OCIgZmlsbD0iIzIyMiIgIC8+PHJlY3QgeD0iMjk4IiB5PSIwIiB3aWR0aD0iMTIiIGhlaWdodD0iMTAwJSIgb3BhY2l0eT0iMC4wODA2NjY2NjY2NjY2NjY2NiIgZmlsbD0iIzIyMiIgIC8+PHJlY3QgeD0iMzI3IiB5PSIwIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAwJSIgb3BhY2l0eT0iMC4wNjMzMzMzMzMzMzMzMzMzNCIgZmlsbD0iIzIyMiIgIC8+PHJlY3QgeD0iMzU1IiB5PSIwIiB3aWR0aD0iMTMiIGhlaWdodD0iMTAwJSIgb3BhY2l0eT0iMC4wODkzMzMzMzMzMzMzMzMzMyIgZmlsbD0iI2RkZCIgIC8+PHJlY3QgeD0iMzc3IiB5PSIwIiB3aWR0aD0iNSIgaGVpZ2h0PSIxMDAlIiBvcGFjaXR5PSIwLjAyIiBmaWxsPSIjZGRkIiAgLz48cmVjdCB4PSIzOTgiIHk9IjAiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMDAlIiBvcGFjaXR5PSIwLjExNTMzMzMzMzMzMzMzMzM0IiBmaWxsPSIjMjIyIiAgLz48cmVjdCB4PSI0MzEiIHk9IjAiIHdpZHRoPSI5IiBoZWlnaHQ9IjEwMCUiIG9wYWNpdHk9IjAuMDU0NjY2NjY2NjY2NjY2NjciIGZpbGw9IiNkZGQiICAvPjwvc3ZnPg==);">
+				<div class="wrap">
+					<div class="icon-container">
+						<span class="mega-octicon octicon-globe"></span>
+					</div>
+					<h1>Hello World</h1>
+					<span class="article-read-time article-meta">
+						<span class="octicon octicon-clock"></span> 10 minute read
+					</span>
+				</div>
+			</div>
+			
+			
+			<a href="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2091418730,2340732727&fm=26&gp=0.jpg">点击这里跳转到我的作品</a>
+			<br>
+			<a href="./src/list.html">点击这里跳转到我的作品页面</a>
+			
+			<div class="resume-box">
+				<div id="userinfo" class="resume-item resume-userinfo" style="color: #808080;">
+					<div class="item-primary">
+						<!---->
+						<div class="info-flex">
+							<div class="info-flex-item">
+								<h2 class="name">胡文博 <svg class="icon-svg">
+										<use xlink:href="#icon_man"></use>
+									</svg></h2>
+								<div class="info-labels">
+									<p><span class="prev-line"><i class="fz-resume fz-experience"></i>4年经验</span><span class="prev-line"><i class="fz-resume fz-degree"></i>本科学历</span><span
+										 class="prev-line"><i class="fz-resume fz-status"></i>离职-随时到岗</span></p>
+									<p><span class="prev-line"><i class="fz-resume fz-tel"></i>15001206751</span><span class="prev-line"><i class="fz-resume fz-weixin"></i>15001206751</span><span
+										 class="prev-line"><i class="fz-resume fz-mail"></i>15001206751@139.com</span></p>
+								</div>
+							</div>
+							<div class="info-flex-item header-upload">
+								<div class="header-box">
+									<div class="header-mask"></div><img src="https://img.bosszhipin.com/beijin/mcs/useravatar/20190320/e562ffbab752115a264b39bbbbf94f50cfcd208495d565ef66e7dff9f98764da_s.jpg"
+									 class="header-img">
+									<!---->
+								</div>
+							</div>
+						</div>
+						<div class="op"><a data-url="/geek/user/info.json" href="javascript:;" ka="user-resume-edit-userinfo" class="link-edit"><svg
+								 class="icon-svg">
+									<use xlink:href="#icon-svg-edit"></use>
+								</svg><span>编辑</span></a></div>
+						<div class="resume-cropper-upload"><input type="file" accept="" class="upload-input">
+							<div class="custom-box">
+								<div></div>
+							</div>
+							<div class="cropper-win" style="display: none;">
+								<div class="custom-cropper-box">
+									<div class="vue-cropper">
+										<div class="cropper-box">
+											<div class="cropper-box-canvas" style="width: 0px; height: 0px; transform: scale(1, 1) translate3d(0px, 0px, 0px) rotateZ(0deg); display: none;"><img
+												 src="" alt="cropper-img"></div>
+										</div>
+										<div class="cropper-drag-box cropper-move"></div>
+										<div class="cropper-crop-box" style="width: 0px; height: 0px; transform: translate3d(0px, 0px, 0px); display: none;"><span
+											 class="cropper-view-box"><img src="" alt="cropper-img" style="width: 0px; height: 0px; transform: scale(1, 1) translate3d(0px, 0px, 0px) rotateZ(0deg);"></span><span
+											 class="cropper-face cropper-move"></span><span class="crop-info" style="top: 0px;">0 × 0</span><span><span
+												 class="crop-line line-w"></span><span class="crop-line line-a"></span><span class="crop-line line-s"></span><span
+												 class="crop-line line-d"></span><span class="crop-point point1"></span><span class="crop-point point2"></span><span
+												 class="crop-point point3"></span><span class="crop-point point4"></span><span class="crop-point point5"></span><span
+												 class="crop-point point6"></span><span class="crop-point point7"></span><span class="crop-point point8"></span></span></div>
+									</div>
+								</div>
+								<div class="btns-box"><button type="button" class="btn btn-primary">确定</button><button type="button" class="btn">取消</button></div>
+							</div>
+						</div>
+					</div>
+					<!---->
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
