@@ -12,7 +12,7 @@ import store from '@/store/index';
 let loadingInstance = null //这里是loading
 //使用create方法创建axios实例
 const Service = axios.create({
-  timeout: 7000, // 请求超时时间
+  timeout: 1000 * 12, // 请求超时时间
   method: 'get',
   headers: {
     'Content-Type': 'application/json;charset=UTF-8'

@@ -3,7 +3,9 @@ import Vuex from 'vuex'
 // huwenbo
 // import ReservationRecordTab from './modules/ReservationRecordTab'
 import NurserySetting from './modules/NurserySetting'
-// import AddCategories from './modules/AddCategories' // 添加课评评分项
+import Login from './modules/Login' // 登录页面
+import UnitManagement from './modules/UnitManagement' // 单位管理
+
 // import AddKPtemplate from './modules/AddKPtemplate' // 添加课评模板
 // import Coupons from './modules/Coupons' // 发放优惠券
 
@@ -23,8 +25,9 @@ const store = new Vuex.Store({
   modules: {
     // huwenbo
     // ReservationRecordTab
-    NurserySetting
-    // AddCategories
+    NurserySetting,
+    Login,
+    UnitManagement
     // AddKPtemplate
     // Coupons
 
